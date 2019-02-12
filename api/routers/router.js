@@ -1,0 +1,11 @@
+const express = require('express')
+const market_controller = require('./../controllers/MarketPlaceController.js')
+const router = express.Router()
+const body_parser = require('body-parser')
+router.use(body_parser.json())
+router.post('/product',market_controller.addProduct)
+router.put('/product/:productid/buy',market_controller.buyProduct)
+router.get('/product/sold',market_controller.getSoldProducts)
+router.get('/product',market_controller.getProduct)
+router.get('/product/forsale',market_controller.getmap)
+module.exports = router;
