@@ -2,6 +2,7 @@
 ### PREREQUESITES:
 #### INSTALL TRUFFLE
     `npm install -g truffle`
+    
 #### INSTALL GANACHE FROM https://truffleframework.com/ganache
     * After getting the App Image of ganache, go to properties of the file, in permissions tab check "Allow executing file as program".
     * After installation go to settings on the ganache application and set HOSTNAME AS "127.0.0.1 - lo", PORT NUMBER AS "7545", NETWORK ID AS "5777".
