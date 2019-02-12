@@ -8,21 +8,21 @@
     * SELECT SAVE AND RESTART
 
 ### COMPILE & MIGRATE, GET THE CONTRACT ADDRESS
-    3.1. Navigate to the project folder, execute "truffle compile"
-    3.2. After succesful compile, truffle generates a build folder.
-    3.3. Execute "truffle migrate --reset".
-    3.4. After migration is successful, contracted address will be printed on the console or you can also get it from /build/OnineMarket.json file
-    3.5. Copy & Paste the contract address in api/Web.js in return new web.eth.Contract(abi_contract,'/* PASTE HERE */').
+    * Navigate to the project folder, execute "truffle compile"
+    * After succesful compile, truffle generates a build folder.
+    * Execute "truffle migrate --reset".
+    * After migration is successful, contracted address will be printed on the console or you can also get it from /build/OnineMarket.json file
+    * Copy & Paste the contract address in api/Web.js in return new web.eth.Contract(abi_contract,'/* PASTE HERE */').
     
 RETURN TO YOUR ROOT FOLDER RUN THE COMMAND "node app".
 
 ### GET THE POSTMAN COLLECTION FROM https://www.getpostman.com/collections/4d1266ceaf5e4ed2b733 to use API.
 
 ### PROCESS FLOW TO USE API
-    6.1. ADD A PRODUCT USING http://localhost:4000/product - POST REQUEST with body eg :- { "id" : "1" , "name" : "tablet" , "price" : "100" }
-    6.2. BUY A PRODUCT USING http://localhost:4000/product/:productid/buy - PUT REQUEST with body eg :- { "id" : "1"}
-    6.3. SOLD PRODUCTS USING http://localhost:4000/product - GET REQUEST 
-    6.4 PRODUCS FOR SALE USING http://localhost:4000/product/forsale - GET REQUEST 
+    * ADD A PRODUCT USING http://localhost:4000/product - POST REQUEST with body eg :- { "id" : "1" , "name" : "tablet" , "price" : "100" }
+    * BUY A PRODUCT USING http://localhost:4000/product/:productid/buy - PUT REQUEST with body eg :- { "id" : "1"}
+    * SOLD PRODUCTS USING http://localhost:4000/product - GET REQUEST 
+    * PRODUCS FOR SALE USING http://localhost:4000/product/forsale - GET REQUEST 
 
 ### TESTING THE PROJECT
     Execute the command `truffle test`
